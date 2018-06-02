@@ -1,0 +1,12 @@
+---
+apiVersion: projectriff.io/v1alpha1
+kind: Function
+metadata:
+  name: square
+spec:
+  container:
+    image: daniel/square:0.0.1
+  input: numbers
+  protocol: grpc
+  windowing:
+    size: 1
